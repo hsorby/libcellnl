@@ -137,8 +137,7 @@ Milestone 3: functional library for tool developers (timeframe: ? months)
 Milestone 4: advanced capabilities (timeframe: ? months)
 --------------------------------------------------------
 
-#. Highorder model manipulation (recall discussion with Andrew McCulloch at the 8th
-workshop)
+#. High order model manipulation (recall discussion with Andrew McCulloch at the 8th workshop)
    
    #. again, outside core libCellML, but helping tool developers provide these kinds of services is very important.
 
