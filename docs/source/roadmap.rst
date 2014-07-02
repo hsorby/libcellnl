@@ -20,7 +20,9 @@ High level objectives
 #. Focus on CellML 1.2 and beyond.
 
    #. The implementation of libCellML should be driven by the requirements for supporting 1.2 and future versions.
-   #. Concurrent development of libCellML and CellML 1.2 Spec: There is an interdependence between these two, with libCellML being used to validate spec proposals, and the spec defining aspects of how software (such as libCellML) processes CellML 1.2.  This feedback between the two will be done iteratively.
+   #. The community has agreed on the set of proposals to include in CellML 1.2, as summarised by tracker item 55 (https://tracker.physiomeproject.org/show_bug.cgi?id=55). These proposals collectively represent CellML 1.2 and are what will be implemented in the initial versions of libCellML. 
+      This implementation will help test the proposals and in some cases help choose between alternate serialisations of the proposals in CellML XML.
+      Thus, there will be feedback between spec development and libCellML development, and this will be done iteratively.
    #. Implementing support for core+secondary specs is likely to be a big challenge for libCellML
       
       #. libCellML should designed to support the core spec with the flexibility for extra restrictions/constraints coming from the secondary specification.
