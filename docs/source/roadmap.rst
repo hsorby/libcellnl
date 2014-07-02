@@ -5,7 +5,7 @@ libCellML Roadmap
 
 David Nickerson, 9 June 2014
 
-Contributions from Alan Garny, Jonathan Cooper, Mike Cooling, Tommy Yu, Hugh Sorby and the CellML Community but no time yet for full consensus.
+Contributions from Alan Garny, Jonathan Cooper, Mike Cooling, Tommy Yu, Hugh Sorby, Randall Britten and the CellML Community but no time yet for full consensus.
 
 These requirements and milestones are derived from the `CellML API May 2014 Requirements <https://docs.google.com/document/d/1qMpltGGk19RgFAgkgnG8xZVKyI0Q-ZatcxV7VB_ccKc/edit>`_
 collected from the CellML community, with input from the primary target users (application
@@ -20,6 +20,9 @@ High level objectives
 #. Focus on CellML 1.2 and beyond.
 
    #. The implementation of libCellML should be driven by the requirements for supporting 1.2 and future versions.
+   #. The community has agreed on the set of proposals to include in CellML 1.2, as summarised by tracker item 55 (https://tracker.physiomeproject.org/show_bug.cgi?id=55). These proposals collectively represent CellML 1.2 and are what will be implemented in the initial versions of libCellML. 
+      This implementation will help test the proposals and in some cases help choose between alternate serialisations of the proposals in CellML XML.
+      Thus, there will be feedback between spec development and libCellML development, and this will be done iteratively.
    #. Implementing support for core+secondary specs is likely to be a big challenge for libCellML
       
       #. libCellML should designed to support the core spec with the flexibility for extra restrictions/constraints coming from the secondary specification.
