@@ -44,6 +44,7 @@ Milestone 0: setting up development environment (timeframe: ? weeks)
    #. the form of the API to libCellML should not be dictated by the XML serialisation but by the objects tool developers desire to work with.
 
 #. Cross platform build and test environment
+
    #. Using the ABI’s build and test server (BaTS)
    #. buildbot continuous integration software
    #. gTest for testing
