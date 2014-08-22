@@ -12,6 +12,8 @@ collected from the CellML community, with input from the primary target users (a
 developers) and the CellML Editorial Board. Previous editorial board discussions have also been
 incorporated into this roadmap.
 
+Clearly the milestones defined below are to be worked on in numerical order and previous milestones will be completed before work on subsequent milestones begins. Each milestone may consist of several 'releases' and future requirements may impact the design and implementation of earlier releases of libCellML. Major changes in the API will be accepted upto the release of libCellML version 1.0.0
+
 .. contents::
 
 High level objectives
@@ -19,60 +21,63 @@ High level objectives
 
 #. Focus on CellML 1.2 and beyond.
 
-   #. The implementation of libCellML should be driven by the requirements for supporting 1.2 and future versions.
-   #. The community has agreed on the set of proposals to include in CellML 1.2, as summarised by tracker item 55 (https://tracker.physiomeproject.org/show_bug.cgi?id=55). These proposals collectively represent CellML 1.2 and are what will be implemented in the initial versions of libCellML. 
-      This implementation will help test the proposals and in some cases help choose between alternate serialisations of the proposals in CellML XML.
-      Thus, there will be feedback between spec development and libCellML development, and this will be done iteratively.
-   #. Implementing support for core+secondary specs is likely to be a big challenge for libCellML
-      
-      #. libCellML should designed to support the core spec with the flexibility for extra restrictions/constraints coming from the secondary specification.
-      #. multiple secondary specifications could be used in one model.
-      #. secondary specifications may exist for a period of time before they are integrated or consolidated into a new CellML version (if at all, there is still a lot to learn about how secondary specifications will evolve).
+  #. The implementation of libCellML should be driven by the requirements for supporting 1.2 and future versions.
+  #. Implementing support for core+secondary specs is likely to be a big challenge for libCellML.
 
-   #. libCellML should always be able to import earlier version models.
-   #. To begin with, libCellML must be able to export 1.2 models to 1.1 (probably using API marked as deprecated from the beginning and removed once Milestone 3 is achieved).
+    #. libCellML should be designed to support the core spec with the flexibility for extra restrictions/constraints coming from the secondary specification.
+    #. multiple secondary specifications could be used in one model.
+    #. secondary specifications may exist for a period of time before they are integrated or consolidated into a new CellML version (if at all, there is still a lot to learn about how secondary specifications will evolve)
 
-#. The actual libCellML API will evolve as developments progress to meet the requirements outlined below.
-#. These milestones represent an ordered sequence of requirements that need to be met by libCellML. Each milestone may consist of several “releases” and future requirements may impact the design and implementation of earlier releases of libCellML.
+  #. libCellML should always be able to import earlier version models.
+  #. To begin with, libCellML must be able to export 1.2 models to 1.1 (probably using API marked as deprecated from the beginning and removed once Milestone 3 is achieved).
 
-Milestone 0: setting up development environment (timeframe: ? weeks)
---------------------------------------------------------------------
+#. Develop the libCellML API as work progresses through the milestones outlined below.
 
-#. Development language: C++ with SWIG bindings
-#. Begin work on describing CellML specific object model (similar to libSBML) this is much preferred over the current DOM based API.
-   
-   #. the form of the API to libCellML should not be dictated by the XML serialisation but by the objects tool developers desire to work with.
+Environment
+-----------
 
-#. Cross platform build and test environment
+This section will specify the environment for the development of libCellML.
 
-   #. Using the ABI’s build and test server (BaTS)
-   #. buildbot continuous integration software
-   #. gTest for testing
-   #. CMake for build configuration
-   #. using standard system libraries wherever possible
+* GitHub to host the primary libCellML source repository and issue tracker under the CellML organisation (editorial board members)
+* Development language: C++ with SWIG bindings
+* Build: CMake for generating cross-platform build rules
+* Test: Using Buildbot on the BaTS to run continuous integration testing
+* Test: Unit testing to use gtest
+* Documentation: Written in re-Structured text.
+* Documentation: API and source code examples will be documented using c++-style  doxygen comments.
 
-#. Documented development process/workflow
-   
-   #. using GitHub to host the primary libCellML source repository and issue tracker under the CellML organisation (editorial board members)
-   #. agile and test driven development
-      
-      #. release early and often
-      #. functionality more important than API stability in early releases.
-      #. once features are available the API can be fine tuned in consultation with the CellML community.
+Requirements
+++++++++++++
 
-   #. code review prior to acceptance into the primary repository using the pull request feature on GitHub, review of tests submitted to the repository will help give feedback on the “look and feel” of the actual API.
-   #. Incremental tasks added to tracker and discussed prior to embarking on a piece of work, tasks should only require a small number of weeks to complete more than that and they should be broken down.
+* Documentation: Made available on readthedocs.org.  readthedocs uses Sphinx for generating documentation.
+* Development: Agile and test driven development where:
 
-#. all progress should be documented in the GitHub issues.
-#. issues being worked on should be clearly denoted in the issue tracker.
-   
-   #. Proposed API submitted as part of the issues and available for community review/feedback.
+  * Functionality more important than API stability in early releases.
+  * Release early and often
 
-#. We should be aiming for a relatively stable core API for the 1.0 release, but can be flexible until then.
-#. Documentation environment
-   
-   #. Overall integration using Sphinx with reStructuredText, suitable for readthedocs
-   #. API source and code examples documented using doxygen
+* Development: Code review prior to acceptance into the primary repository using the pull request feature on GitHub
+* Development: Objectives are added and broken down into incremental tasks
+* Development: A single task should be no more than two weeks
+* Development: The next objective to be worked on is discussed and agreed with the community before work is started on an objective
+
+We should avoid using non-standard system libraries unless there is a compelling reason.  Once features are available the API can be fine tuned in consultation with the CellML community.
+
+Milestone 0: setting up development environment (timeframe: 8 working days)
+---------------------------------------------------------------------------
+**To be completed on Tuesday 2nd September 2014**
+
+#. Share an UML-esque document with the community via github describing CellML specific object model.
+
+   * The form of the API to libCellML should not be dictated by the XML serialisation but by the objects tool developers desire to work with.
+
+#. Setup the cross platform build and test environment using the ABI's build and test server (BaTS)
+
+   * Builds required: Windows 64 bit, OSX 10.9, Ubuntu 14.04 64 bit
+
+#. Document the development process/workflow
+
+   * How we are to implement agile and test driven development
+   * How code reviews are done
 
 Milestone 1: starting to get useful code (timeframe: ? months)
 --------------------------------------------------------------
