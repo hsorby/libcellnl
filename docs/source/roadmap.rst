@@ -24,7 +24,7 @@ High level objectives
   #. The implementation of libCellML should be driven by the requirements for supporting 1.2 and future versions.
   #. Implementing support for core+secondary specs is likely to be a big challenge for libCellML.
 
-    #. libCellML should designed to support the core spec with the flexibility for extra restrictions/constraints coming from the secondary specification.
+    #. libCellML should be designed to support the core spec with the flexibility for extra restrictions/constraints coming from the secondary specification.
     #. multiple secondary specifications could be used in one model.
     #. secondary specifications may exist for a period of time before they are integrated or consolidated into a new CellML version (if at all, there is still a lot to learn about how secondary specifications will evolve)
 
@@ -64,6 +64,7 @@ We should avoid using non-standard system libraries unless there is a compelling
 
 Milestone 0: setting up development environment (timeframe: 8 working days)
 ---------------------------------------------------------------------------
+**To be completed on Tuesday 2nd September 2014**
 
 #. Share an UML-esque document with the community via github describing CellML specific object model.
 
