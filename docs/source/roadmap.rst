@@ -84,7 +84,7 @@ Milestone 1: starting to get useful code (timeframe: ? months)
 
 #. Create a CellML 1.2 model from scratch and save it to XML
    
-   #. create a new model, add imports, components, variables, and math.
+   #. create a new model, add imports, components, variables, units, and math.
    #. the first test case?
    
 #. Load a CellML 1.2 model, make changes, save it.
