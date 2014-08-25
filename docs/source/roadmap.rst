@@ -64,7 +64,7 @@ We should avoid using non-standard system libraries unless there is a compelling
 
 Milestone 0: setting up development environment (timeframe: 8 working days)
 ---------------------------------------------------------------------------
-**To be completed on Tuesday 2nd September 2014**
+**To be completed on Wednesday 3rd September 2014**
 
 #. Share an UML-esque document with the community via github describing CellML specific object model.
 
