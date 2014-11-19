@@ -4,4 +4,6 @@ build/
 
 # Eclipse project files
 .project
+.pydevproject
+.settings/
 
