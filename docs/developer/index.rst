@@ -19,3 +19,4 @@ Contents:
    developmentcontribution
    developmentreview
    developmentcodingstandard
+   developmentrelease
