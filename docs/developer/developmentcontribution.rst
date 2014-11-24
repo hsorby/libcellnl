@@ -70,7 +70,7 @@ On the 'tests' builder page fill in the details for your repositories, see **Fig
    
    **Figure 3**: Builders page
 
-When the 'Force Build' button is pressed Buildbot will retreive your code, configure, build and test it.  When it is finished it will email you with the outcome, the email will also include a link to the build.  If all the tests passed copy the link to the successful build in your email into the libcellml-tests pull request.  This will notify the reviewers that your work is ready for it's final review and inclusion in the libcellml/cellml repository.
+When the 'Force Build' button is pressed Buildbot will retreive your code, configure, build and test it.  When it is finished it will email you with the outcome, the email will also include a link to the build.  If all the tests passed copy the link to the successful build in your email into the libcellml-tests pull request.  This will notify the reviewers that your work is ready for it's final review and inclusion in the cellml/libcellml repository.
 
 When the reviewer is satisfied the three open pull requests will be merged and closed.  All that is left to do now is to thank you for your contribution.
 
