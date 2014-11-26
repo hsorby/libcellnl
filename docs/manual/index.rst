@@ -1,8 +1,8 @@
 .. libCellML Manual index page
 
-================
-libCellML Manual
-================
+======
+Manual
+======
 
 This is the libCellML manual for libCellML version |version|.
 

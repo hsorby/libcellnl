@@ -18,6 +18,7 @@ Contents:
    :titlesonly:
 
    roadmap
+   manual/index
    developer/index
    objectmodel/index
 

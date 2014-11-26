@@ -12,7 +12,7 @@ This document describes how you configure and build the libCellML library.
 Overview
 ========
 
-After following the :doc:`setup process <developmentsetup>`_ you need to configure and build the library.  The libCellML library uses a recent version CMake for generating environment specific build scripts.  To configure and build libCellML you will need a recent version of CMake and a compiler toolchain (gcc, clang, cl, intel).  You can configure the build either through the command line or a CMake GUI interface.  Detailed steps are given below for each platform that libCellML is tested on.
+After following the :doc:`setup process <developmentsetup>` you need to configure and build the library.  The libCellML library uses a recent version CMake for generating environment specific build scripts.  To configure and build libCellML you will need a recent version of CMake and a compiler toolchain (gcc, clang, cl, intel).  You can configure the build either through the command line or a CMake GUI interface.  Detailed steps are given below for each platform that libCellML is tested on.
 
 From the command line we can configure the following variables to change the build::
 
@@ -21,7 +21,7 @@ From the command line we can configure the following variables to change the bui
   COVERAGE - Enable coverage profiling (available only with gcc compilers)
   MEMCHECK - Enable memory checking (available only with gcc compilers)
   
-These same variables can be set in a GUI but the names will have LIBCELLML_ prefixed to them.
+These same variables can be set in a GUI but the names will have LIBCELLML\_ prefixed to them.
 
 Linux Command Line
 ==================

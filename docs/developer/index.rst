@@ -15,6 +15,7 @@ Contents:
    :titlesonly:
 
    developmentsetup
+   developmentconfigbuild
    developmentgitbranching
    developmentcontribution
    developmentreview
