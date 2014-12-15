@@ -64,10 +64,8 @@ Requirements
 
 We should avoid using non-standard system libraries unless there is a compelling reason.  Once features are available the API can be fine tuned in consultation with the CellML community.
 
-Milestone 0: setting up development environment (timeframe: 8 working days)
-===========================================================================
-
-**To be completed on Wednesday 3rd September 2014**
+Milestone 0: setting up development environment
+===============================================
 
 #. Share an UML-esque document with the community via github describing CellML specific object model.
 
