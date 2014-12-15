@@ -75,9 +75,9 @@ Milestone 0: setting up development environment
 #. Setup the cross platform build and test environment using the ABI's build and test server (BaTS)
 
    * Builds required: Windows 64 bit, OS X 10.9, Ubuntu 14.04 64 bit
-       * Using Buildbot for CI framework
-       * Interact with Github to process changes
-       * Make Buildbot status available from autotest.bioeng.auckland.ac.nz/libcellml-buildbot/
+   * Using Buildbot for CI framework
+   * Interact with Github to process changes
+   * Make Buildbot status available from autotest.bioeng.auckland.ac.nz/libcellml-buildbot/
 
 #. Document the development process/workflow
 
