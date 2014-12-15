@@ -44,14 +44,15 @@ This section will specify the environment for the development of libCellML.
 * Build: CMake for generating cross-platform build rules
 * Test: Using Buildbot on the BaTS to run continuous integration testing
 * Test: Unit testing to use gtest
-* Documentation: Written in re-Structured text.
+* Documentation: Written in re-Structured text
 * Documentation: API and source code examples will be documented using c++-style  doxygen comments.
 
 Requirements
 ------------
 
-* Documentation: Made available on readthedocs.org.  readthedocs uses Sphinx for generating documentation.
-* Development: Agile and test driven development where:
+* Documentation: Made available on readthedocs.org.  readthedocs uses Sphinx for generating documentation
+* Documentation: Is amenable for inclusion in external documentation efforts
+* Development: Agile, test driven development where:
 
   * Functionality more important than API stability in early releases.
   * Release early and often
@@ -70,16 +71,21 @@ Milestone 0: setting up development environment (timeframe: 8 working days)
 
 #. Share an UML-esque document with the community via github describing CellML specific object model.
 
-   * The form of the API to libCellML should not be dictated by the XML serialisation but by the objects tool developers desire to work with.
+   * The form of the API to libCellML should not be dictated by the XML serialisation but by the objects tool developers desire to work with
+   * Respond to feedback
 
 #. Setup the cross platform build and test environment using the ABI's build and test server (BaTS)
 
-   * Builds required: Windows 64 bit, OSX 10.9, Ubuntu 14.04 64 bit
+   * Builds required: Windows 64 bit, OS X 10.9, Ubuntu 14.04 64 bit
+       * Using Buildbot for CI framework
+       * Interact with Github to process changes
+       * Make Buildbot status available from autotest.bioeng.auckland.ac.nz/libcellml-buildbot/
 
 #. Document the development process/workflow
 
-   * How we are to implement agile and test driven development
-   * How code reviews are done
+   * Code contribution document
+   * Developer setup document
+   * Code review document
 
 Milestone 1: starting to get useful code (timeframe: ? months)
 ==============================================================
